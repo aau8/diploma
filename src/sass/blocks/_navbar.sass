@@ -1,12 +1,10 @@
 .navbar
   background: #ffffff url('../img/navbar/bgc-navbar.png') repeat-y
   background-position: right center, left center
-  background-size: 705px, contain
+  background-size: 40.8%, contain
   &-block 
     display: flex
-    // justify-content: space-between
     align-items: center
-    // width: 1170px
     height: 82px
   &__image
     margin-right: 135px
@@ -30,17 +28,6 @@
           height: 12px
           background-color: $text-color
           opacity: 0.15
-      &:hover
-        color: $main-color
-        &::before  
-          content: ""
-          position: absolute
-          top: 20px
-          right: 0
-          width: 100%
-          height: 2px
-          background-color: $main-color 
-          opacity: 1
   &-call
     display: flex
     justify-content: space-between
@@ -63,8 +50,62 @@
     font-size: 14px
 .num__light
   font-weight: 400
-// @media   ( max-width: 1200px )
-//   .navbar
-//     &__image
-//       margin-right: 0
-  
+@media   ( max-width: 1200px )
+  .navbar
+    &__image
+      margin-right: 40px
+    &-panel
+      margin-right: 100px
+      &__section
+        &:not(:last-child)
+          margin-right: 40px
+@media   ( max-width: 992px )
+  .navbar
+    background: #fff
+    &__image
+      width: 45px
+      margin-right: 40px
+    &-panel
+      margin-right: 74px
+      &__section
+        font-size: 13px
+        margin-right: 0px
+        &:not(:last-child)
+          margin-right: 22px
+          &::after
+            content: ""
+            position: absolute
+            top: 0
+            right: -18px
+            width: 2px
+            height: 12px
+            background-color: $text-color
+            opacity: 0.15
+    &__phone
+      margin-right: 0
+      &__image
+        width: 15px
+        margin-top: 0
+      &__num
+        font-size: 13px
+    &__button
+      margin-left: 20px
+      font-size: 12px 
+
+
+
+
+
+@media   ( min-width: 992px )
+  .navbar-panel__section
+    &:hover
+      color: $main-color
+      &::before  
+        content: ""
+        position: absolute
+        top: 20px
+        right: 0
+        width: 100%
+        height: 2px
+        background-color: $main-color 
+        opacity: 1

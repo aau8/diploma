@@ -26,6 +26,36 @@ body {
   margin: auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 567px;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    width: 420px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 320px;
+  }
+}
+
 .button {
   background-color: #ffc800;
   border: none;
@@ -51,7 +81,7 @@ body {
 .navbar {
   background: #ffffff url("../img/navbar/bgc-navbar.png") repeat-y;
   background-position: right center, left center;
-  background-size: 705px, contain;
+  background-size: 40.8%, contain;
 }
 
 .navbar-block {
@@ -97,21 +127,6 @@ body {
   opacity: 0.15;
 }
 
-.navbar-panel__section:hover {
-  color: #ffc800;
-}
-
-.navbar-panel__section:hover::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #ffc800;
-  opacity: 1;
-}
-
 .navbar-call {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,5 +167,77 @@ body {
 
 .num__light {
   font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .navbar__image {
+    margin-right: 40px;
+  }
+  .navbar-panel {
+    margin-right: 100px;
+  }
+  .navbar-panel__section:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    background: #fff;
+  }
+  .navbar__image {
+    width: 45px;
+    margin-right: 40px;
+  }
+  .navbar-panel {
+    margin-right: 74px;
+  }
+  .navbar-panel__section {
+    font-size: 13px;
+    margin-right: 0px;
+  }
+  .navbar-panel__section:not(:last-child) {
+    margin-right: 22px;
+  }
+  .navbar-panel__section:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 2px;
+    height: 12px;
+    background-color: #020202;
+    opacity: 0.15;
+  }
+  .navbar__phone {
+    margin-right: 0;
+  }
+  .navbar__phone__image {
+    width: 15px;
+    margin-top: 0;
+  }
+  .navbar__phone__num {
+    font-size: 13px;
+  }
+  .navbar__button {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-panel__section:hover {
+    color: #ffc800;
+  }
+  .navbar-panel__section:hover::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffc800;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
