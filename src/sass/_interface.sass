@@ -1,0 +1,21 @@
+body
+  +reg
+  color: $text-color
+.container
+  max-width: 1202px
+  width: 100%
+  margin: auto
+
+.button
+  background-color: $main-color
+  border: none
+  +bold
+  &-small
+    padding: 9px 14px 6px 15px
+  &:focus
+    outline: none
+@media   ( min-width: 992px )
+  .button
+    &:hover
+      cursor: pointer
+      background-color: lighten($main-color, 10% )

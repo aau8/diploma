@@ -1,0 +1,70 @@
+.navbar
+  background: #ffffff url('../img/navbar/bgc-navbar.png') repeat-y
+  background-position: right center, left center
+  background-size: 705px, contain
+  &-block 
+    display: flex
+    // justify-content: space-between
+    align-items: center
+    // width: 1170px
+    height: 82px
+  &__image
+    margin-right: 135px
+  &-panel
+    font-weight: 400
+    margin-right: 122px
+    +bold
+    &__section
+      font-size: 15px
+      text-decoration: none
+      color: $text-color
+      position: relative
+      &:not(:last-child)
+        margin-right: 56px
+        &::after
+          content: ""
+          position: absolute
+          top: 0
+          right: -32px
+          width: 2px
+          height: 12px
+          background-color: $text-color
+          opacity: 0.15
+      &:hover
+        color: $main-color
+        &::before  
+          content: ""
+          position: absolute
+          top: 20px
+          right: 0
+          width: 100%
+          height: 2px
+          background-color: $main-color 
+          opacity: 1
+  &-call
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__phone
+    font-size: 18px
+    margin-right: 44px
+    display: flex
+    &__image
+      margin-top: 1px
+      margin-right: 6px
+    &__num
+      display: block
+      text-decoration: none
+      color: $text-color
+      font-weight: 700
+      letter-spacing: 0.1px
+  &__button
+    margin-top: 3px
+    font-size: 14px
+.num__light
+  font-weight: 400
+// @media   ( max-width: 1200px )
+//   .navbar
+//     &__image
+//       margin-right: 0
+  
