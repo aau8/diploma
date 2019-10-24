@@ -358,7 +358,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 104px;
-  padding-bottom: 117px;
+  padding-bottom: 100px;
 }
 
 .service-card {
@@ -463,5 +463,266 @@ body {
 
 .service-card:hover .service__title {
   color: #000;
+}
+
+.offer {
+  background: url("../img/offer/offer-bg.png"), #ffffff;
+  background-position: left center, right center;
+  background-size: 56.5%, contain;
+  background-repeat: repeat-y, no-repeat;
+  height: 500px;
+  margin-top: 143px;
+  padding-bottom: 63px;
+  position: relative;
+}
+
+.offer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer-block__left {
+  width: 667px;
+}
+
+.offer-block__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 96px;
+}
+
+.offer-block__content {
+  margin-top: 91px;
+  margin-right: 22px;
+}
+
+.offer-card {
+  width: 198px;
+  height: 168px;
+  background-color: #fff;
+  text-align: center;
+  margin-right: 36px;
+  margin-bottom: 36px;
+}
+
+.offer-card-3, .offer-card-6 {
+  margin-right: 0;
+}
+
+.offer-card__img {
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.offer-card__img-6 {
+  margin-top: 26px;
+}
+
+.offer-card__text {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.offer-card__text-4, .offer-card__text-5 {
+  line-height: 22px;
+}
+
+.offer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+  margin-right: -10px;
+  position: relative;
+}
+
+.offer__num {
+  display: block;
+  font-size: 37px;
+  color: #ffc800;
+  font-weight: 600;
+  position: relative;
+}
+
+.offer__num::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 35px;
+  width: 31px;
+  height: 2px;
+  background-color: #020202;
+}
+
+.offer__num-1 {
+  margin-bottom: 16px;
+}
+
+.offer__num-2 {
+  margin-top: -23px;
+}
+
+.offer__num-3 {
+  margin-top: -4px;
+  margin-bottom: 8px;
+}
+
+.offer__text {
+  font-size: 20px;
+  color: #020202;
+  width: 350px;
+  margin-left: 67px;
+  font-family: 'Proxima Nova Lt', sans-serif;
+  font-weight: 600;
+}
+
+.offer__text-1 {
+  margin-top: 10px;
+  margin-left: 63px;
+  line-height: 24px;
+}
+
+.offer__text-2 {
+  margin-left: 55px;
+}
+
+.offer__text-3 {
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
+.offer__text-4 {
+  position: absolute;
+  top: 7px;
+  right: 0;
+}
+
+.offer-box {
+  width: 244px;
+  height: 58px;
+  background-color: #ffc800;
+  position: absolute;
+  top: -27px;
+  left: 319px;
+}
+
+.offer-box__text {
+  font-size: 28px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-left: 32px;
+  font-weight: 600;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  max-width: 570px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #ffff;
+  padding: 72px 100px 73px 100px;
+  position: relative;
+}
+
+.modal-dialog__close {
+  border: none;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-dialog__close:focus {
+  outline: none;
+}
+
+.modal-dialog__close:hover {
+  cursor: pointer;
+}
+
+.modal-dialog__title {
+  font-family: 'Proxima Nova Lt', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 37px;
+  margin-left: 7px;
+}
+
+.modal-dialog__advice {
+  font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 41px;
+  margin-left: 7px;
+}
+
+.modal-dialog__input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding-bottom: 19px;
+}
+
+.modal-dialog__button {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 26px 113px 26px 118px;
+}
+
+.modal-dialog__call-back {
+  margin: auto;
+  width: 273px;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  margin-right: 50px;
+}
+
+.modal-dialog__num {
+  font-family: 'Proxima Nova Lt', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-right: 3px;
+}
+
+.modal-form__error {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

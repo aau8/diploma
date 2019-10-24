@@ -1,0 +1,101 @@
+.offer
+  background: url('../img/offer/offer-bg.png'), #ffffff
+  background-position: left center, right center
+  background-size: 56.5%, contain 
+  background-repeat: repeat-y, no-repeat
+  height: 500px
+  margin-top: 143px
+  padding-bottom: 63px
+  position: relative
+  &-block
+    display: flex
+    justify-content: space-between
+    &__left
+      width: 667px
+    &__cards
+      display: flex 
+      flex-wrap: wrap
+      margin-top: 96px
+    &__content
+      margin-top: 91px
+      margin-right: 22px
+  &-card
+    width: 198px
+    height: 168px
+    background-color: #fff
+    text-align: center
+    margin-right: 36px
+    margin-bottom: 36px
+    &-3, &-6
+      margin-right: 0
+
+    &__img
+      margin-top: 16px
+      margin-bottom: 20px
+      &-6
+        margin-top: 26px
+    &__text
+      font-size: 18px
+      text-transform: uppercase
+      &-4, &-5
+        line-height: 22px
+  &-content
+    display: flex
+    align-items: center
+    margin-bottom: 70px
+    margin-right: -10px
+    position: relative
+  &__num
+    display: block
+    font-size: 37px
+    color: $main-color
+    font-weight: 600
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 16px
+      left: 35px
+      width: 31px
+      height: 2px
+      background-color: $text-color
+    &-1
+      margin-bottom: 16px
+    &-2
+      margin-top: -23px
+    &-3
+      margin-top: -4px
+      margin-bottom: 8px
+  &__text
+    font-size: 20px
+    color: $text-color
+    width: 350px
+    margin-left: 67px 
+    +bold
+    &-1
+      margin-top: 10px
+      margin-left: 63px
+      line-height: 24px
+    &-2
+      margin-left: 55px
+    &-3
+      position: absolute
+      top: 4px
+      right: 0
+    &-4
+      position: absolute
+      top: 7px
+      right: 0
+  &-box
+    width: 244px
+    height: 58px
+    background-color: $main-color
+    position: absolute
+    top: -27px
+    left: 319px
+    &__text
+      font-size: 28px
+      text-transform: uppercase
+      padding-top: 15px
+      padding-left: 32px
+      font-weight: 600
