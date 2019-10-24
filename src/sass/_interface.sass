@@ -28,8 +28,31 @@ body
     padding: 9px 14px 6px 15px
   &:focus
     outline: none
+.header-slider__item
+  background-color: #000000
+  margin: auto
+.slick-dotted 
+  &.slick-slider 
+    margin-bottom: 0
+  // стили для точек слайдера
+.slick-dots
+  bottom: 45px
+  left: -15px
+  & li
+    & button
+      background-color: #fff
+      &:before
+        content: ''
+        font-size: 20px
+    &.slick-active 
+      & button
+        &:before
+          background: $main-color
+  // ----конец стилей для точек----
 @media   ( min-width: 992px )
   .button
     &:hover
       cursor: pointer
       background-color: lighten($main-color, 10% )
+
+

@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Дипломная работа</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,5 +43,101 @@
     <!-- /.container -->
   </nav>
   <!-- /.navbar -->
+  <header class="header">
+    <div class="container">
+      <div class="header-block">
+        <div class="header-content">
+          <h2 class="header__title">Наша бригада  по монтированию отопления и сантехники</h2>
+          <h3 class="header__subtitle">вызов по Москве и Московской области</h3>
+          <p class="header__text">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки. Всё что Вам нужно это оставить заявку либо позвонить самому на указанный номер. Всего хорошего.</p>
+        </div>
+        <!-- контейнер с информационным текстом в блоке header  -->
+        <button class="button button-small header-button">подробнее</button>
+      </div>
+    </div>
+    <div class="slider header-slider">
+      <div class="header-slider__item"><img src="img/header/header-image.jpg" alt=""></div>
+      <div class="header-slider__item"><img src="img/header/header-image.jpg" alt=""></div>
+      <div class="header-slider__item"><img src="img/header/header-image.jpg" alt=""></div>
+      <div class="header-slider__item"><img src="img/header/header-image.jpg" alt=""></div>
+    </div>
+    <!-- слайдер в блоке header -->
+  </header>
+  <!-- конец стилей для header----------------->
+  <div class="service">
+    <div class="container">
+      <div class="service-block">
+        <div class="service-card">
+          <img src="img/service/service-image-1.png" alt="горячая батарея" class="service-image">
+          <div class="service-content">
+            <h2 class="service__title">Монтаж систем отопления</h2>
+            <button class="button button-small service__button">узнать цену</button>
+          </div>
+          <!-- первая карточка -->
+        </div>
+        <div class="service-card">
+          <img src="img/service/service-image-1.png" alt="" class="service-image">
+          <div class="service-content">
+            <h2 class="service__title">Монтаж сантехнического оборудования</h2>
+            <button class="button button-small service__button">узнать цену</button>
+          </div>
+          <!-- вторая карточка -->
+        </div>
+        <div class="service-card">
+          <img src="img/service/service-image-1.png" alt="" class="service-image">
+          <div class="service-content">
+            <h2 class="service__title">Монтаж канализационного оборудования</h2>
+            <button class="button button-small service__button">узнать цену</button>
+          </div>
+          <!-- третья карточка -->
+        </div>
+        <div class="service-card">
+          <img src="img/service/service-image-1.png" alt="" class="service-image">
+          <div class="service-content">
+            <h2 class="service__title">Монтаж систем отопления</h2>
+            <button class="button button-small service__button">узнать цену</button>
+          </div>
+          <!-- четвертая карточка -->
+        </div>
+        <div class="service-card">
+          <img src="img/service/service-image-1.png" alt="" class="service-image">
+          <div class="service-content">
+            <h2 class="service__title">Монтаж сантехнического оборудования</h2>
+            <button class="button button-small service__button">узнать цену</button>
+          </div>
+          <!-- пятая карточка -->
+        </div>
+        <div class="service-card">
+          <img src="img/service/service-image-1.png" alt="" class="service-image">
+          <div class="service-content">
+            <h2 class="service__title">Монтаж канализационного оборудования</h2>
+            <button class="button button-small service__button">узнать цену</button>
+          </div>
+          <!-- шестая карточка -->
+        </div>
+      </div>
+      <!-- /.service-block -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.service -->
+ <!-- ссылки на скриаты js -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+    
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        // autoplay: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+      });
+    });
+  </script>
 </body>
 </html>

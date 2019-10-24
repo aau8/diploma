@@ -92,10 +92,6 @@
       margin-left: 20px
       font-size: 12px 
 
-
-
-
-
 @media   ( min-width: 992px )
   .navbar-panel__section
     &:hover
@@ -109,3 +105,24 @@
         height: 2px
         background-color: $main-color 
         opacity: 1
+
+@media   ( max-width: 769px )
+  .navbar
+    &__image
+      width: 35px
+      margin-right: 0px
+    &-panel
+      margin-right: 74px
+      &__section
+        font-size: 13px
+        &:not(:last-child)
+          margin-right: 14px
+          &::after
+            content: ""
+            position: absolute
+            top: 0
+            right: -12px
+            width: 2px
+            height: 12px
+            background-color: $text-color
+            opacity: 0.15
