@@ -58,8 +58,8 @@
     <div class="slider header-slider">
       <div class="header-slider__item"><img src="img/header/header-image.jpg" alt=""></div>
       <div class="header-slider__item"><img src="img/header/header-image-2.jpg" alt=""></div>
-      <div class="header-slider__item"><img src="img/header/header-image.jpg" alt=""></div>
-      <div class="header-slider__item"><img src="img/header/header-image.jpg" alt=""></div>
+      <div class="header-slider__item"><img src="img/header/header-image-3.jpg" alt=""></div>
+      <div class="header-slider__item"><img src="img/header/header-image-4.jpg" alt=""></div>
     </div>
     <!-- слайдер в блоке header -->
   </header>
@@ -194,9 +194,68 @@
           </div>
         </div>
       </div>
-      <div class="offer-box"><p class="offer-box__text">почему мы?</p></div>
-    
+      <div class="box"><p class="box__text">почему мы?</p></div>
+      <!-- табличка "ПОЧЕМУ МЫ?" -->
     </div>
+  </div>
+  <!-- -------- конец блока offer ---------->
+  <div class="reviews">
+    <div class="container">
+      <div class="reviews-block">
+        <div class="reviews-slider">
+          <div class="reviews-card">
+            <img src="img/reviews/reviews-people-1.png" alt="фото женщины" class="reviews__image">
+            <div class="reviews-content">
+              <h2 class="reviews__title">Анна Говорухина</h2>
+              <p class="reviews__text">Authoritatively incubate multidisciplinary partnerships and user friendly e-markets. Interactively whiteboard client-based leadership skills </p>
+            </div>
+            <div class="reviews-assesment">
+              <div class="reviews__like"><img src="img/reviews/reviews-like.png" alt="" class="reviews__like__image"><span class="reviews__like__text">211</span></div>
+              <div class="reviews__dislike"><img src="img/reviews/reviews-dislike.png" alt="" class="reviews__dislike__image"><span class="reviews__dislike__text">5</span></div>
+            </div>
+          </div>
+<!-- ------- первая карточка отзывов ------- -->
+          <div class="reviews-card">
+            <img src="img/reviews/reviews-people-2.png" alt="" class="reviews__image">
+            <div class="reviews-content">
+              <h2 class="reviews__title">Виктор Шукшин</h2>
+              <p class="reviews__text"> Synergistically mesh magnetic leadership rather than cooperative best practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics </p>
+            </div>
+            <div class="reviews-assesment">
+              <div class="reviews__like"><img src="img/reviews/reviews-like.png" alt="" class="reviews__like__image"><span class="reviews__like__text">143</span></div>
+              <div class="reviews__dislike"><img src="img/reviews/reviews-dislike.png" alt="" class="reviews__dislike__image"><span class="reviews__dislike__text">2</span></div>
+            </div>
+          </div>
+<!-- ------- вторая карточка отзывов ------- -->
+          <div class="reviews-card">
+            <img src="img/reviews/reviews-people-1.png" alt="" class="reviews__image">
+            <div class="reviews-content">
+              <h2 class="reviews__title">Елена Сюткина</h2>
+              <p class="reviews__text">Authoritatively incubate multidisciplinary partnerships and user friendly e-markets. Interactively whiteboard client-based leadership skills </p>
+            </div>
+            <div class="reviews-assesment">
+              <div class="reviews__like"><img src="img/reviews/reviews-like.png" alt="" class="reviews__like__image"><span class="reviews__like__text">268</span></div>
+              <div class="reviews__dislike"><img src="img/reviews/reviews-dislike.png" alt="" class="reviews__dislike__image"><span class="reviews__dislike__text">7</span></div>
+            </div>
+          </div>
+<!-- ------- третья карточка отзывов ------- -->
+          <!-- <div class="reviews-card">
+            <img src="img/reviews/reviews-people-2.png" alt="" class="reviews__image">
+            <div class="reviews-content">
+              <h2 class="reviews__title">Виктор Шукшин</h2>
+              <p class="reviews__text"> Synergistically mesh magnetic leadership rather than cooperative best practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics </p>
+            </div>
+            <div class="reviews-assesment">
+              <div class="reviews__like"><img src="img/reviews/reviews-like.png" alt="" class="reviews__like__image"><span class="reviews__like__text">143</span></div>
+              <div class="reviews__dislike"><img src="img/reviews/reviews-dislike.png" alt="" class="reviews__dislike__image"><span class="reviews__dislike__text">2</span></div>
+            </div>
+          </div>
+------- четвертая карточка отзывов ------- -->
+        </div>
+      </div>
+    </div>
+    <div class="box reviews-box"><p class="box__text reviews-box__text">отзывы</p></div>
+    <!-- -----------табличка ОТЗЫВЫ------------ -->
   </div>
  <!-- ссылки на скриаты js -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -215,7 +274,17 @@
         cssEase: 'linear',
         arrows: false,
       });
+      $('.reviews-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        dotsClass: 'slick-dots reviews-dots',
+        variableWidth: true,
+        
+      });
     });
   </script>
 </body>
 </html>
+<div class="reviews__like"><img src="" alt="" class="reviews__like__image"><span class="reviews__like__text"></span></div>

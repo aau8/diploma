@@ -99,6 +99,23 @@ body {
   background: #ffc800;
 }
 
+.box {
+  width: 244px;
+  height: 58px;
+  background-color: #ffc800;
+  position: absolute;
+  top: -27px;
+  left: 319px;
+}
+
+.box__text {
+  font-size: 28px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-left: 32px;
+  font-weight: 600;
+}
+
 @media (min-width: 992px) {
   .button:hover {
     cursor: pointer;
@@ -472,6 +489,7 @@ body {
   background-repeat: repeat-y, no-repeat;
   height: 500px;
   margin-top: 143px;
+  margin-bottom: 142px;
   padding-bottom: 63px;
   position: relative;
 }
@@ -608,121 +626,111 @@ body {
   right: 0;
 }
 
-.offer-box {
+.reviews {
+  background-color: #000;
+  position: relative;
+}
+
+.reviews-block {
+  padding-top: 110px;
+  padding-bottom: 169px;
+}
+
+.reviews-card {
+  text-align: center;
+  width: 466px;
+  margin-right: 120.5px;
+  margin-left: 120.5px;
+}
+
+.reviews__image {
+  margin: auto;
+  margin-bottom: 17px;
+}
+
+.reviews__title {
+  color: #ffc800;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.reviews__text {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.reviews-assesment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews__like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 15px;
+}
+
+.reviews__like__image {
+  margin-right: 7px;
+}
+
+.reviews__like__text {
+  color: #fff;
+  display: block;
+}
+
+.reviews__dislike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 15px;
+}
+
+.reviews__dislike__image {
+  margin-right: 8px;
+}
+
+.reviews__dislike__text {
+  color: #fff;
+  display: block;
+}
+
+.reviews-dots {
+  bottom: -121px;
+  left: -16px;
+}
+
+.reviews-dots #slick-slide-control11 {
+  margin-right: 2px;
+}
+
+.reviews li {
+  width: 21px;
+}
+
+.reviews-box {
   width: 244px;
   height: 58px;
-  background-color: #ffc800;
-  position: absolute;
-  top: -27px;
-  left: 319px;
+  top: -25px;
+  left: 318px;
 }
 
-.offer-box__text {
-  font-size: 28px;
-  text-transform: uppercase;
-  padding-top: 15px;
-  padding-left: 32px;
-  font-weight: 600;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-}
-
-.modal__active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.modal-dialog {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: auto;
-  max-width: 570px;
-  width: 90%;
-  min-width: 200px;
-  background-color: #ffff;
-  padding: 72px 100px 73px 100px;
-  position: relative;
-}
-
-.modal-dialog__close {
-  border: none;
-  background-color: #fff;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.modal-dialog__close:focus {
-  outline: none;
-}
-
-.modal-dialog__close:hover {
-  cursor: pointer;
-}
-
-.modal-dialog__title {
-  font-family: 'Proxima Nova Lt', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 33px;
-  margin-bottom: 37px;
-  margin-left: 7px;
-}
-
-.modal-dialog__advice {
-  font-size: 16px;
-  line-height: 35px;
-  margin-bottom: 41px;
-  margin-left: 7px;
-}
-
-.modal-dialog__input {
-  width: 100%;
-  margin-bottom: 15px;
-  padding-bottom: 19px;
-}
-
-.modal-dialog__button {
-  font-size: 16px;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  padding: 26px 113px 26px 118px;
-}
-
-.modal-dialog__call-back {
-  margin: auto;
-  width: 273px;
-  font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 8px;
-  margin-right: 50px;
-}
-
-.modal-dialog__num {
-  font-family: 'Proxima Nova Lt', sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  margin-right: 3px;
-}
-
-.modal-form__error {
-  position: relative;
+.reviews-box__text {
+  padding-top: 17px;
+  padding-left: 61px;
 }
 /*# sourceMappingURL=style.css.map */
