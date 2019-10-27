@@ -6,7 +6,8 @@
     padding-top: 87px
     padding-bottom: 72px
   &-article
-    width: 1172px
+    max-width: 1172px
+    width: 100%
     display: flex
     justify-content: space-between
     margin-bottom: 66px
@@ -15,7 +16,8 @@
   &__image
     margin-bottom: 30px
   &-content
-    width: 330px
+    width: 88%
+    // width: 330px
   &-header
     display: flex
     justify-content: space-between
@@ -41,9 +43,38 @@
     color: #020202
     padding: 18px 42px 16px 39px
     display: block
-    margin-left: 433px
+    // margin-left: 433px
+    margin: auto
   &-box
     top: -29px
     left: 318px
     &__text
       padding-left: 55px
+
+@media   ( max-width: 1200px )
+  .news
+    &-card
+      width: 320px
+      &-3
+        // display: none
+    &__image
+      width: 100%
+    &-header
+      width: 100%
+    &__text
+      font-size: 15px
+      width: 100%
+
+    &-box
+      left: 140px
+      width: 230px
+      height: 50px
+
+@media   ( max-width: 768px )
+  .news
+    &-article
+      flex-direction: column
+    &-card
+      margin: auto
+      margin-bottom: 35px
+

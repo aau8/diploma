@@ -57,6 +57,14 @@ $(document).ready(function() {
     arrows: false,
     dotsClass: 'slick-dots reviews-dots',
     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 // ----------конец скрипта для слайдера в блоке ОТЗЫВЫ---------
 
@@ -134,19 +142,19 @@ $(document).ready(function() {
           url: "mail.php",
           data: $(this).serialize(),
           success: function (response) {
-            console.log('Прибыли данные: ' + response);
+            // console.log('Прибыли данные: ' + response);
             $('#modalForm')[0].reset();
             success.addClass('modal__active');
             // modal.addClass('modal__active');
             // $("thanks.php").text(response)
           },
           error: function(jqXHR, textStatus, errorThrown) {
-            console.error(jqXHR + " " + textStatus);
+            // console.error(jqXHR + " " + textStatus);
           }
         });
 
       } else {
-        console.log('Введите данные');
+        // console.log('Введите данные');
       };
       closeSuc.on('click', function() {
       success.removeClass('modal__active');
@@ -165,19 +173,19 @@ $('#requestForm').on('submit', function name(event) {
         url: "mail.php",
         data: $(this).serialize(),
         success: function (response) {
-          console.log('Прибыли данные: ' + response);
+          // console.log('Прибыли данные: ' + response);
           $('#requestForm')[0].reset();
           success.addClass('modal__active');
           // modal.addClass('modal__active');
           // $("thanks.php").text(response)
         },
         error: function(jqXHR, textStatus, errorThrown) {
-          console.error(jqXHR + " " + textStatus);
+          // console.error(jqXHR + " " + textStatus);
         }
       });
 
     } else {
-      console.log('Введите данные');
+      // console.log('Введите данные');
     };
     closeSuc.on('click', function() {
     success.removeClass('modal__active');

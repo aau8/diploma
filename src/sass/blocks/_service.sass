@@ -68,27 +68,53 @@
     left: 319px
     &__text
       font-size: 28px
+      font-weight: 600
       text-align: center
       padding-top: 15px
       text-transform: uppercase
-// @media   ( min-width: 992px )
-.service
-  &-card
-    &:hover
-      .service
-        &-image
-          filter: grayscale(0)
-    &:hover
-      & .service__button
-        background-color: #000
-        color: #000
-    &:hover
-      & .service__title__hoover
-        &::after
-          opacity: 1
-      & .service__title
-        color: #000
+@media   ( min-width: 992px )
+  .service
+    &-card
+      &:hover
+        .service
+          &-image
+            filter: grayscale(0)
+      &:hover
+        & .service__button
+          background-color: #000
+          color: #000
+      &:hover
+        & .service__title
+          opacity: 0
+        & .service__title__hoover
+          &::after
+            opacity: 1
+          &::before
+            opacity: 1
+        & .service__title
+          color: #000
 
+@media   ( max-width: 1200px )
+  .service
+    &-block
+      justify-content: center
+    &-box
+      left: 140px
+      width: 230px
+      height: 50px
+      &__text
+        font-size: 25px
+        padding-left: 5px
+
+@media   ( max-width: 992px )
+  .service
+    &-card
+      width: 300px
+    &-image
+      width: 100%
+    &-content
+      padding-top: 40px
+      padding-left: 80px
 
 
   
