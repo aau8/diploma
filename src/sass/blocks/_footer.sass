@@ -1,0 +1,65 @@
+.footer
+  background-color: #000
+  &-block
+    color: #fdfcfc
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 52px
+    padding-bottom: 55px
+  &-address
+    width: 349px
+    display: flex
+    justify-content: space-between
+    &__text
+      font-size: 20px
+  &-social
+    width: 98px
+    display: flex
+    justify-content: space-between
+    margin-left: 13px
+    &__link
+      width: 26px
+      height: 26px
+      background-color: #fff
+      border-radius: 15px
+    &__image
+      width: 16px
+      height: 16px
+      margin-top: 5px
+      margin-left: 5px
+  &-contacts
+    width: 429px
+    height: 18px
+    display: flex
+    justify-content: space-between
+    margin-right: 33px
+  &__mail
+    width: 232px
+    border-right: solid 1px #fff
+    display: flex
+    justify-content: space-between
+    &__icon
+      height: 14px
+      margin-top: 2px
+    &__text
+      font-size: 18px
+      margin-right: 25px
+  &__phone
+    width: 174px
+    &__image
+      margin-bottom: 2px
+    &__num
+      margin-left: 4px
+      color: #fdfcfc
+      text-decoration: none
+      font-weight: 700
+      font-size: 18px
+    &__light
+      font-weight: 400
+@media   ( min-width: 992px )
+  .footer
+    &-social
+      &__link
+        &:hover
+          background-color: $main-color

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container">
       <div class="navbar-block">
         <div class="navbar__logo">
@@ -22,19 +22,19 @@
         </div>
         <!-- /.navbar__logo -->
         <div class="navbar-panel">
-          <a href="#" class="navbar-panel__section">Услуги</a>
-          <a href="#" class="navbar-panel__section">Цены</a>
-          <a href="#" class="navbar-panel__section">Отзывы</a>
-          <a href="#" class="navbar-panel__section">Новости</a>
-          <a href="#" class="navbar-panel__section">Контакты</a>
+          <a href="#service" id="panelService" class="navbar-panel__section">Услуги</a>
+          <a href="#price" id="panelPrice" class="navbar-panel__section">Цены</a>
+          <a href="#reviews" id="panelReviews" class="navbar-panel__section">Отзывы</a>
+          <a href="#news" id="panelNews" class="navbar-panel__section">Новости</a>
+          <a href="#contacts" id="panelContacts" class="navbar-panel__section">Контакты</a>
         </div>
         <!-- /.navbar__panel -->
         <div class="navbar-call">
           <div class="navbar__phone">
-            <img src="img/navbar/navbar-icon-phone.png" alt="телефонная трубка" class="navbar__phone__image">
+            <img src="img/navbar/icon-phone.png" alt="телефонная трубка" class="navbar__phone__image">
             <a href="tel:+78633422221" class="navbar__phone__num"><span class="num__light">+7 (863)</span> 342-22-21</a>
           </div>
-          <button class="button button-small navbar__button" id="button">Заказать звонок</button>
+          <button class="button button-small navbar__button" id="buttonNavbar">Заказать звонок</button>
         </div>
         <!-- /.navbar__call-block -->
       </div>
@@ -64,7 +64,7 @@
     <!-- слайдер в блоке header -->
   </header>
   <!-- конец стилей для header----------------->
-  <div class="service">
+  <div class="service" id="service">
     <div class="container">
       <div class="service-block">
         <div class="service-card">
@@ -73,7 +73,7 @@
             <div class="service-content">
               <h2 class="service__title">Монтаж систем<br> отопления</h2>
               <div class="service__title__hoover"></div>
-              <button class="button button-small service__button">узнать цену</button>
+              <button class="button button-small service__button" id="buttonService1">узнать цену</button>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
             <div class="service-content">
               <h2 class="service__title">Монтаж сантехнического<br> оборудования</h2>
               <div class="service__title__hoover"></div>
-              <button class="button button-small service__button">узнать цену</button>
+              <button class="button button-small service__button" id="buttonService2">узнать цену</button>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
             <div class="service-content">
               <h2 class="service__title">Монтаж канализационного<br> оборудования</h2>
               <div class="service__title__hoover"></div>
-              <button class="button button-small service__button">узнать цену</button>
+              <button class="button button-small service__button" id="buttonService3">узнать цену</button>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@
             <div class="service-content">
               <h2 class="service__title">Монтаж систем<br> отопления</h2>
               <div class="service__title__hoover"></div>
-              <button class="button button-small service__button">узнать цену</button>
+              <button class="button button-small service__button" id="buttonService4">узнать цену</button>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
             <div class="service-content">
               <h2 class="service__title">Монтаж сантехнического<br> оборудования</h2>
               <div class="service__title__hoover"></div>
-              <button class="button button-small service__button">узнать цену</button>
+              <button class="button button-small service__button" id="buttonService5">узнать цену</button>
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@
             <div class="service-content">
               <h2 class="service__title">Монтаж канализационного оборудования</h2>
               <div class="service__title__hoover"></div>
-              <button class="button button-small service__button">узнать цену</button>
+              <button class="button button-small service__button" id="buttonService6">узнать цену</button>
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@
     <!-- /.container -->
   </div>
   <!-- /.service -->
-  <div class="offer">
+  <div class="offer" id="price">
     <div class="container">
       <div class="offer-block">
         <div class="offer-block__left">
@@ -199,7 +199,7 @@
     </div>
   </div>
   <!-- -------- конец блока offer ---------->
-  <div class="reviews">
+  <div class="reviews" id="reviews">
     <div class="container">
       <div class="reviews-block">
         <div class="reviews-slider">
@@ -239,18 +239,6 @@
             </div>
           </div>
 <!-- ------- третья карточка отзывов ------- -->
-          <!-- <div class="reviews-card">
-            <img src="img/reviews/reviews-people-2.png" alt="" class="reviews__image">
-            <div class="reviews-content">
-              <h2 class="reviews__title">Виктор Шукшин</h2>
-              <p class="reviews__text"> Synergistically mesh magnetic leadership rather than cooperative best practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics </p>
-            </div>
-            <div class="reviews-assesment">
-              <div class="reviews__like"><img src="img/reviews/reviews-like.png" alt="" class="reviews__like__image"><span class="reviews__like__text">143</span></div>
-              <div class="reviews__dislike"><img src="img/reviews/reviews-dislike.png" alt="" class="reviews__dislike__image"><span class="reviews__dislike__text">2</span></div>
-            </div>
-          </div>
-------- четвертая карточка отзывов ------- -->
         </div>
       </div>
     </div>
@@ -258,7 +246,7 @@
     <!-- -----------табличка ОТЗЫВЫ------------ -->
   </div>
 <!-- ---------- конец блока reviews ----------  -->
-  <div class="news">
+  <div class="news" id="news">
     <div class="container">
       <div class="news-block">
         <div class="news-article">
@@ -308,48 +296,66 @@
   <!-- /.news -->
   <div class="map">
     <div class="map-block" id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.2903776870335!2d37.948381504470014!3d55.815221252955006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acc59c3575ba9%3A0xbee91b004e1d06f9!2z0YPQuy4g0KHQvtCy0LXRgtGB0LrQsNGPLCA0OCwg0JHQsNC70LDRiNC40YXQsCwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQzOTAy!5e0!3m2!1sru!2sru!4v1572007661024!5m2!1sru!2sru" width="1926" height="666" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.2903776870335!2d37.948381504470014!3d55.815221252955006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acc59c3575ba9%3A0xbee91b004e1d06f9!2z0YPQuy4g0KHQvtCy0LXRgtGB0LrQsNGPLCA0OCwg0JHQsNC70LDRiNC40YXQsCwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTQzOTAy!5e0!3m2!1sru!2sru!4v1572007661024!5m2!1sru!2sru" width="1903" height="666" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
-  <div class="modal">
-    <div class="modal-block">
-      <h3 class="modal__title">оставьте <span class="modal__word">заявку</span></h3>
-      <form action="" class="modal-form">
-        <input type="text" class="modal__input" placeholder="Введите Ваше имя">
-        <input type="text" class="modal__input" placeholder="Введите Ваш номер телефона">
-        <button class="button modal__button">заказать  звонок</button>
+  <div class="request">
+    <div class="request-block">
+      <h3 class="request__title">оставьте <span class="request__word">заявку</span></h3>
+      <form action="" class="requestForm">
+        <input type="text" class="request__input" id="requestName" required placeholder="Введите Ваше имя">
+        <input type="text" class="request__input" id="requestPhone" required placeholder="Введите Ваш номер телефона">
+        <button class="button request__button">заказать  звонок</button>
       </form>
     </div>
   </div>
   </div>
-
- <!-- ссылки на скриаты js -->
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
-    
-  <script>
-    $(document).ready(function(){
-      $('.slider').slick({
-        dots: true,
-        // autoplay: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        arrows: false,
-      });
-      $('.reviews-slider').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false,
-        dotsClass: 'slick-dots reviews-dots',
-        variableWidth: true,
-        
-      });
-    });
-  </script>
+<!-- --------- конец стилей для map--------- -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer-address">
+          <img src="img/footer/icon-address.png" alt="маркер" class="footer-address__image">
+          <address class="footer-address__text">г. Москва, ул. Советская 48 корп. 3</address>
+        </div>
+        <div class="footer-social"> 
+          <a href="https://www.instagram.com/" target="_blank" class="footer-social__link"><img src="img/footer/icon-social-1.png" alt="инстаграм" class="footer-social__image"><span class="footer-social__bg"></span></a>
+          <a href="https://vk.com/" target="_blank" class="footer-social__link"><img src="img/footer/icon-social-2.png" alt="вк" class="footer-social__image"><span class="footer-social__bg"></span></a>
+          <a href="https://ok.ru/" target="_blank" class="footer-social__link"><img src="img/footer/icon-social-3.png" alt="одноклассники" class="footer-social__image"><span class="footer-social__bg"></span></a>
+        </div>
+        <div class="footer-contacts">
+          <div class="footer__mail">
+            <img src="img/footer/icon-mail.png" alt="email" class="footer__mail__icon">
+            <p class="footer__mail__text">infosanteh@gmail.com</p>
+          </div>
+          <div class="footer__phone">
+            <img src="img/footer/icon-phone.png" alt="телефонная трубка" class="footer__phone__image">
+            <a href="tel:+78633422221" class="footer__phone__num"><span class="footer__phone__light">+7 (863)</span> 342-22-21</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!---------------- начало для модального окна  ------------------------>
+  <div class="modal" id="modal">
+    <div class="modal-block">
+      <button class="modal-block__close" id="close">&times;</button>
+      <h3 class="request__title">оставьте <span class="request__word">заявку</span></h3>
+      <form action="mail.php" method="POST" class="request-form" id="modalForm">
+        <input type="text" name="modalname" class="request__input" id="modalName" placeholder="Введите Ваше имя">
+        <input type="text" name="modalphone" class="request__input" id="modalPhone" placeholder="Введите Ваш номер телефона">
+        <button class="button request__button">заказать  звонок</button>
+      </form>
+    </div>
+  </div>
+  <!--------------- конец для модального окна -------------------- -->
+  <!------------------ начало для стрелки ----------------------->
+  <a href="#navbar" class="arrow-link" id="arrow"><div class="arrow"><img src="img/arrow.png" alt="стрелка вверх" class="arrow__icon"></div></a>
+  <!--------------------- конец для стрелки ----------------------->
+  <!-- ссылки на скриаты js -->
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
 </body>
 </html>
-<div class="reviews__like"><img src="" alt="" class="reviews__like__image"><span class="reviews__like__text"></span></div>
