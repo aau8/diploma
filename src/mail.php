@@ -24,7 +24,7 @@ try {
     $mail->setFrom('artiom.ygryumov@yandex.ru', 'Артем'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('artiom.ygryumov@gmail.ru');
+    $mail->addAddress('artiom.ygryumov@gmail.com');
 
     // -----------------------
     // Само письмо

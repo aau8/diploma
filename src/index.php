@@ -301,7 +301,7 @@
   <div class="request">
     <div class="request-block">
       <h3 class="request__title">оставьте <span class="request__word">заявку</span></h3>
-      <form action="" class="requestForm">
+      <form action="" class="requestForm" id="requestForm" >
         <input type="text" class="request__input" id="requestName" required placeholder="Введите Ваше имя">
         <input type="text" class="request__input" id="requestPhone" required placeholder="Введите Ваш номер телефона">
         <button class="button request__button">заказать  звонок</button>
@@ -325,7 +325,7 @@
         <div class="footer-contacts">
           <div class="footer__mail">
             <img src="img/footer/icon-mail.png" alt="email" class="footer__mail__icon">
-            <p class="footer__mail__text">infosanteh@gmail.com</p>
+            <a href="mailto:infosanteh@gmail.com" class="footer__mail__text__link"><p class="footer__mail__text">infosanteh@gmail.com</p></a>
           </div>
           <div class="footer__phone">
             <img src="img/footer/icon-phone.png" alt="телефонная трубка" class="footer__phone__image">
@@ -341,13 +341,24 @@
       <button class="modal-block__close" id="close">&times;</button>
       <h3 class="request__title">оставьте <span class="request__word">заявку</span></h3>
       <form action="mail.php" method="POST" class="request-form" id="modalForm">
-        <input type="text" name="modalname" class="request__input" id="modalName" placeholder="Введите Ваше имя">
-        <input type="text" name="modalphone" class="request__input" id="modalPhone" placeholder="Введите Ваш номер телефона">
+        <input type="text" required name="modalname" class="request__input" id="modalName" placeholder="Введите Ваше имя">
+        <input type="text" required name="modalphone" class="request__input" id="modalPhone" placeholder="Введите Ваш номер телефона">
         <button class="button request__button">заказать  звонок</button>
       </form>
     </div>
   </div>
   <!--------------- конец для модального окна -------------------- -->
+
+  <!-- модальное окно при успешной отправке -->
+  <div class="modal" id="form-success">
+    <div class="modal-block modal-success">
+      <button class="modal-block__close" id="close-success">&times;</button>
+      <strong class="modal-success__title">Заявка отправлена!</strong>
+      <span class="modal-success__text">В ближайшее время к вам на почту придет дизайн-макет!</span>
+    </div>
+  </div>
+  <!-- конец модального окна при успешной отправке  -->
+
   <!------------------ начало для стрелки ----------------------->
   <a href="#navbar" class="arrow-link" id="arrow"><div class="arrow"><img src="img/arrow.png" alt="стрелка вверх" class="arrow__icon"></div></a>
   <!--------------------- конец для стрелки ----------------------->

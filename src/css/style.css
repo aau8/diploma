@@ -1021,6 +1021,9 @@ a:focus {
 .footer__mail__text {
   font-size: 18px;
   margin-right: 25px;
+  text-decoration: none;
+  text-decoration: none;
+  color: #fdfcfc;
 }
 
 .footer__phone {
@@ -1075,5 +1078,22 @@ body {
   .arrow:hover {
     background-color: #ffc800;
   }
+}
+
+.modal-success {
+  max-width: 570px;
+  width: 90%;
+  padding: 50px 70px 50px 60px;
+  height: 100px;
+}
+
+.modal-success__title {
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.modal-success__text {
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

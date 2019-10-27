@@ -8,6 +8,8 @@ $(document).ready(function() {
   var buttonS6 = $('#buttonService6');
   var modal = $('#modal');
   var close = $('#close');
+  var closeSuc = $('#close-success');
+  var success = $('#form-success');
 // скрипты для кнопок для перехода к модальному окну (начало)
   buttonN.on('click', function() {
     modal.addClass('modal__active');
@@ -119,4 +121,66 @@ $(document).ready(function() {
   /* маска для телефона */
   $('#modalPhone').mask('+7 (999) 999-99-99');
   $('#requestPhone').mask('+7 (999) 999-99-99');
+
+// скрипт для отправки формы модального окна (для кнопок)
+  $('#modalForm').on('submit', function name(event) {
+    event.preventDefault();
+    const modalName = document.getElementById('modalName'),
+      modalPhone = document.getElementById('modalPhone');
+
+      if (modalName.value !== '' && modalPhone.value !== '') {
+        $.ajax({
+          type: "POST",
+          url: "mail.php",
+          data: $(this).serialize(),
+          success: function (response) {
+            console.log('Прибыли данные: ' + response);
+            $('#modalForm')[0].reset();
+            success.addClass('modal__active');
+            // modal.addClass('modal__active');
+            // $("thanks.php").text(response)
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.error(jqXHR + " " + textStatus);
+          }
+        });
+
+      } else {
+        console.log('Введите данные');
+      };
+      closeSuc.on('click', function() {
+      success.removeClass('modal__active');
+    });
+  });
+// конец скрипта для отправки формы модального окна (для кнопок)
+
+$('#requestForm').on('submit', function name(event) {
+  event.preventDefault();
+  const modalName = document.getElementById('requestName'),
+    modalPhone = document.getElementById('requestPhone');
+
+    if (modalName.value !== '' && modalPhone.value !== '') {
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize(),
+        success: function (response) {
+          console.log('Прибыли данные: ' + response);
+          $('#requestForm')[0].reset();
+          success.addClass('modal__active');
+          // modal.addClass('modal__active');
+          // $("thanks.php").text(response)
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          console.error(jqXHR + " " + textStatus);
+        }
+      });
+
+    } else {
+      console.log('Введите данные');
+    };
+    closeSuc.on('click', function() {
+    success.removeClass('modal__active');
+  });
+});
 });
