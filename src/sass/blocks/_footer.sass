@@ -98,9 +98,54 @@
         margin-right: 15px
       &__text
         font-size: 14px
+        margin-right: 0
     &__phone
       &__image
         margin-right: 10px
       &__num
         font-size: 14px
         margin-left: 0
+@media   ( max-width: 567px )
+  .footer
+    position: relative
+    &-block
+      display: flex
+      flex-direction: column
+      height: 45px
+      padding-top: 50px
+      padding-bottom: 45px
+    &-contacts
+      flex-direction: unset
+      // margin-top: 19px
+      width: 370px
+    &-social
+      position: absolute
+      top: 15px
+    &-address
+      margin-bottom: 10px
+    &__mail
+      &__text
+        margin-top: 2px
+@media   ( max-width: 420px )
+    .footer
+      &-contacts
+        width: 320px
+        flex-direction: column
+        align-items: center
+      &-address
+        width: 200px
+        &__text
+          font-size: 11px
+      &-mail
+        &__icon 
+          margin-right: 8px
+        &__text
+          font-size: 11px
+      &__phone
+        width: 114px
+        &__image
+          margin-right: 0px
+          width: 14px
+
+        &__num
+          font-size: 11px

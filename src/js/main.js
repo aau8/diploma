@@ -46,6 +46,15 @@ $(document).ready(function() {
     fade: true,
     cssEase: 'linear',
     arrows: false,
+    // responsive: [
+    //   {
+    //     breakpoint: 567,
+    //     settings: {
+    //       fade: false
+    //       // variableWidth: false,
+    //     }
+    //   },
+    // ]
   });
 // ----------конец скрипта для слайдера в header (первый, второй блок)---------
 
@@ -62,6 +71,7 @@ $(document).ready(function() {
         breakpoint: 1200,
         settings: {
           slidesToShow: 1,
+          // variableWidth: false,
         }
       },
     ]
@@ -105,6 +115,65 @@ $(document).ready(function() {
     $('body,html').animate({scrollTop: top}, 1500);
   });
 // ----------конец скриптов для плавного перехода к блокам
+
+
+
+
+
+
+
+
+
+
+// ----------начало скриптов для плавного перехода к блокам
+  // скрипт для блока УСЛУГИ
+  $("#burService").on("click", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $("#service").offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+  // скрипт для блока ЦЕНЫ  
+  $("#burPrice").on("click", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $("#price").offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+  // скрипт для блока ОТЗЫВЫ
+  $("#burReviews").on("click", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $("#reviews").offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+  // скрипт для блока НОВОСТИ
+  $("#burNews").on("click", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $("#news").offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+  // скрипт для блока КОНТАКТЫ
+  $("#burContacts").on("click", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $("#contacts").offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+// ----------конец скриптов для плавного перехода к блокам
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ----------начало скриптов для стрелки вверх
   $("#arrow").on("click", function (event) {
@@ -162,33 +231,35 @@ $(document).ready(function() {
   });
 // конец скрипта для отправки формы модального окна (для кнопок)
 
-$('#requestForm').on('submit', function name(event) {
-  event.preventDefault();
-  const modalName = document.getElementById('requestName'),
-    modalPhone = document.getElementById('requestPhone');
+// начало скрипта для отправки формы модального окна (в map)
+  $('#requestForm').on('submit', function name(event) {
+    event.preventDefault();
+    const modalName = document.getElementById('requestName'),
+      modalPhone = document.getElementById('requestPhone');
 
-    if (modalName.value !== '' && modalPhone.value !== '') {
-      $.ajax({
-        type: "POST",
-        url: "mail.php",
-        data: $(this).serialize(),
-        success: function (response) {
-          // console.log('Прибыли данные: ' + response);
-          $('#requestForm')[0].reset();
-          success.addClass('modal__active');
-          // modal.addClass('modal__active');
-          // $("thanks.php").text(response)
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-          // console.error(jqXHR + " " + textStatus);
-        }
-      });
+      if (modalName.value !== '' && modalPhone.value !== '') {
+        $.ajax({
+          type: "POST",
+          url: "mail.php",
+          data: $(this).serialize(),
+          success: function (response) {
+            // console.log('Прибыли данные: ' + response);
+            $('#requestForm')[0].reset();
+            success.addClass('modal__active');
+            // modal.addClass('modal__active');
+            // $("thanks.php").text(response)
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            // console.error(jqXHR + " " + textStatus);
+          }
+        });
 
-    } else {
-      // console.log('Введите данные');
-    };
-    closeSuc.on('click', function() {
-    success.removeClass('modal__active');
+      } else {
+        // console.log('Введите данные');
+      };
+      closeSuc.on('click', function() {
+      success.removeClass('modal__active');
+    });
   });
-});
+// конец скрипта для отправки формы модального окна (в map)
 });

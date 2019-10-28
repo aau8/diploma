@@ -33,9 +33,72 @@
     padding: 10px 40px 10px 39px
     letter-spacing: -1px
   &-slider
+    z-index: 0
     &__item
       margin: auto
+@media   ( max-width: 992px )
+  .header
+    &-block
+      width: 700px
+      margin-top: 90px
+    &__title
+      font-size: 30px
+      margin-bottom: 10px
+    &__subtitle
+      font-size: 30px
+      margin-bottom: 20px
+    &__text
+      font-size: 15px
+      margin-bottom: 37px
+      line-height: normal
+    &-button
+      padding: 6px 28px 6px 28px
+    &-slider
+      &__item
+        width: 768px
+        & > img
+          width: 100%
 @media   ( max-width: 768px )
   .header
     margin-bottom: 100px
-        
+    &-block
+      width: 500px
+      margin-top: 50px
+    &-slider
+      &__item
+        width: 768px
+        & > img
+          width: 100%
+    &__title
+      font-size: 18px
+    &__subtitle
+      font-size: 18px
+      margin-bottom: 15px
+    &__text
+      font-size: 13px
+      margin-bottom: 15px
+  .slick-dots
+    bottom: 22px
+@media   ( max-width: 567px )
+  .header
+    &-block
+      width: 400px
+      margin-top: 20px
+    &__title
+      font-size: 14px
+      width: 330px
+      margin-bottom: 5px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 10px
+    &__text
+      font-size: 11px
+    &-button
+      font-size: 14px  
+      padding: 4px 25px 4px 25px
+@media   ( max-width: 420px )
+  .header
+    &-block
+      width: 320px
+    &__title
+      width: 320px

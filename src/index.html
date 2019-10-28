@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Дипломная работа</title>
+  <link rel="shortcut icon" href="img/graphics/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
@@ -37,6 +38,21 @@
           <button class="button button-small navbar__button" id="buttonNavbar">Заказать звонок</button>
         </div>
         <!-- /.navbar__call-block -->
+        <!-- гамбургер меню (начало)  -->
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" id="burService" href="#service">Услуги</a></li>
+            <li><a class="menu__item" id="burPrice" href="#price">Цены</a></li>
+            <li><a class="menu__item" id="burReviews" href="#reviews">Отзывы</a></li>
+            <li><a class="menu__item" id="burNews" href="#news">Новости</a></li>
+            <li><a class="menu__item" id="burContacts" href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- гамбургер меню (конец)  -->  
       </div>
       <!-- /.navbar-block -->
     </div>
@@ -298,7 +314,7 @@
     <div class="request">
       <div class="request-block">
         <h3 class="request__title">оставьте <span class="request__word">заявку</span></h3>
-        <form action="" class="requestForm" id="requestForm" >
+        <form action="#" class="requestForm" id="requestForm" >
           <input type="text" class="request__input" id="requestName" required placeholder="Введите Ваше имя">
           <input type="text" class="request__input" id="requestPhone" required placeholder="Введите Ваш номер телефона">
           <button class="button request__button">заказать  звонок</button>
