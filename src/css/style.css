@@ -338,8 +338,25 @@ a:focus {
 }
 
 @media (max-width: 420px) {
+  .navbar-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30px;
+  }
   .navbar__button {
     font-size: 11px;
+    padding: 5px 8px 5px 8px;
+  }
+  .navbar__phone {
+    margin-bottom: 5px;
+  }
+  .navbar__phone__image {
+    width: 12px;
   }
   .navbar__phone__num {
     font-size: 11px;
@@ -578,11 +595,28 @@ a:focus {
 }
 
 @media (max-width: 420px) {
+  .header {
+    margin-bottom: 60px;
+  }
   .header-block {
-    width: 320px;
+    width: 230px;
+    left: 20px;
   }
   .header__title {
-    width: 320px;
+    width: 280px;
+    font-size: 12px;
+  }
+  .header__subtitle {
+    font-size: 12px;
+  }
+  .header__text {
+    display: none;
+  }
+  .header-button {
+    font-size: 11px;
+  }
+  .slick-dots {
+    opacity: 0;
   }
 }
 
@@ -1411,6 +1445,11 @@ a:focus {
   position: relative;
 }
 
+.map__google {
+  width: 100%;
+  height: 666px;
+}
+
 .map-block {
   height: 664px;
 }
@@ -1536,6 +1575,15 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.modal__input {
+  width: 300px;
+}
+
+.modal__button {
+  width: 300px;
+  font-size: 19px;
 }
 
 .modal-block {

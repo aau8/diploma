@@ -9,6 +9,11 @@
   display: none
   &__active
     display: flex
+  &__input
+    width: 300px
+  &__button
+    width: 300px
+    font-size: 19px
   &-block
     width: 305px
     height: 276px
@@ -33,7 +38,8 @@
       &:focus
         outline: none
 @media   ( min-width: 992px )
-  .modal-block__close
-    &:hover
-      background-color: $main-color
-      cursor: pointer
+  .modal
+    &-block__close
+      &:hover
+        background-color: $main-color
+        cursor: pointer

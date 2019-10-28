@@ -48,9 +48,10 @@ $(document).ready(function() {
     arrows: false,
     // responsive: [
     //   {
-    //     breakpoint: 567,
+    //     breakpoint: 420,
     //     settings: {
-    //       fade: false
+    //       // fade: false,
+    //       // speed: 500,
     //       // variableWidth: false,
     //     }
     //   },
