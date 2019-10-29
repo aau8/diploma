@@ -78,6 +78,57 @@ $(document).ready(function() {
     ]
   });
 // ----------конец скрипта для слайдера в блоке ОТЗЫВЫ---------
+// начало валидации для модального окна
+  $('#modalForm').validate({
+    rules:{
+      modalname: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      modalphone: "required",
+    },
+    errorElement: "span",
+    errorClass:"invalidModal btnError",
+    messages: {
+      modalname: {
+        required: "*Заполните поле",
+        minlength: jQuery.validator.format("*Минимум символов: {0}"),
+        maxlength: jQuery.validator.format("*Максимум символов: {0}"),
+      },
+      modalphone: {
+        required: "*Заполните поле",
+        minlength: jQuery.validator.format("*Необходимо символов: {0}"),
+      }
+    }
+  });
+// конец валидации для модального окна
+
+// начало валидации для модального окна
+  $('#requestForm').validate({
+    rules:{
+      requestname: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      requestphone: "required",
+    },
+    errorElement: "span",
+    errorClass:"invalidModal btnError",
+    messages: {
+      requestname: {
+        required: "*Заполните поле",
+        minlength: jQuery.validator.format("*Минимум символов: {0}"),
+        maxlength: jQuery.validator.format("*Максимум символов: {0}"),
+      },
+      requestphone: {
+        required: "*Заполните поле",
+        minlength: jQuery.validator.format("*Необходимо символов: {0}"),
+      }
+    }
+  });
+// конец валидации для модального окна
 
 // ----------начало скриптов для плавного перехода к блокам
   // скрипт для блока УСЛУГИ
@@ -214,7 +265,12 @@ $(document).ready(function() {
           success: function (response) {
             // console.log('Прибыли данные: ' + response);
             $('#modalForm')[0].reset();
-            success.addClass('modal__active');
+            // $('#modal').fadeOut();
+            modal.removeClass('modal__active');
+            // setTimeout(function(){
+            //   document.forms['#modal'].reset(); // очищается форма методом .reset()
+            //   $('#modal').modal('hide'); 
+            // }, 3000);  
             // modal.addClass('modal__active');
             // $("thanks.php").text(response)
           },
@@ -241,7 +297,7 @@ $(document).ready(function() {
       if (modalName.value !== '' && modalPhone.value !== '') {
         $.ajax({
           type: "POST",
-          url: "mail.php",
+          url: "mail2.php",
           data: $(this).serialize(),
           success: function (response) {
             // console.log('Прибыли данные: ' + response);
@@ -263,4 +319,7 @@ $(document).ready(function() {
     });
   });
 // конец скрипта для отправки формы модального окна (в map)
+
+
+
 });

@@ -124,6 +124,34 @@ a:focus {
   font-weight: 600;
 }
 
+.modal-form__error {
+  position: relative;
+}
+
+span.invalidModal {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 14px;
+  color: #e00024;
+}
+
+span.invalidOffer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: #e00024;
+}
+
+span.invalid {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  font-size: 14px;
+  color: #e00024;
+}
+
 @media (min-width: 992px) {
   .button:hover {
     cursor: pointer;
@@ -1502,6 +1530,10 @@ a:focus {
   width: 200px;
 }
 
+.request-form__error {
+  position: relative;
+}
+
 @media (max-width: 1200px) {
   .request {
     left: 140px;
@@ -1610,7 +1642,7 @@ a:focus {
 }
 
 .modal-block__close {
-  font-size: 16px;
+  font-size: 30px;
   border: none;
   background-color: #fff;
   width: 30px;
@@ -1622,6 +1654,10 @@ a:focus {
 
 .modal-block__close:focus {
   outline: none;
+}
+
+.request__input {
+  position: relative;
 }
 
 @media (min-width: 992px) {
